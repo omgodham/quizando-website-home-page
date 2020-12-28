@@ -1,0 +1,113 @@
+.home{
+    width: 100%;
+    height: 90vh;
+}
+.home__content{
+    background: linear-gradient(#e83e8c, #6610f2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home__top{
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;  
+    display: flex;
+}
+.home__top__img{
+   display: flex;
+   margin-top: auto; 
+   height: 90%;
+}
+.home__img{
+width: 100%;
+}
+.home__top__text{ 
+    color:white;
+    font-weight: 500;
+    font-size: 130%;
+}
+.home__top__btn{
+    background-color: #007bff;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.home__top__btn:hover{
+cursor: pointer;
+background-color: white;
+    color: #007bff;
+}
+
+.home__bottom{
+    background: linear-gradient(#362550,#100029);
+    text-align: center;
+    color: crimson;
+    width: 100%;
+    flex: 0.1;
+}
+.home__bottom >h1{
+    font-weight: 800;
+}
+
+.money__won{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+}
+.money__won >h2{
+    flex: 1;
+    color: white;
+}
+
+@media screen and (max-width:992px){
+    .home__top__text{ 
+        color:white;
+        font-weight: 500;
+        font-size: 75%;
+    }
+    .home__bottom{
+        width: 100%;
+        height: 50%; 
+    }
+    .money__img{
+        height: 70px;
+        width: 70px;
+    }
+    .home__bottom >h1{
+        font-size: 25px;
+    }
+    .home{
+        height: 80vh;
+    }
+    .home__top__img{
+        margin-right: 2rem;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:379px)
+{
+    .home__top{
+        padding: 40px 0;
+        width: 98%;
+        margin: 0 auto;  
+        display: flex;
+    }
+    .home__top__img{
+        margin-right: 2rem;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:327px)
+{
+ .home{
+     width: 100%;
+    height: 100%;
+    } 
+ 
+}

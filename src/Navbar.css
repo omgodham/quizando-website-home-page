@@ -1,0 +1,98 @@
+.nav-container{
+    width:100%;
+    background-color: #323031;
+    }
+    .navbar{
+        display:grid;
+        grid-template-columns:repeat(4,auto);/*Setting Size of contents in nav-container*/
+        align-items:center;
+    height:90px;
+    width:95%;/*Setting width of navbar to 90%*/
+    max-width:1720px;
+    margin:0 auto;/*top-bottom 0 and left-right auto for 90% of navbar*/
+    /*If you don't write it it will start from start and not will be in center*/
+    }
+    #navbar-logo {
+    color:var(--white);
+    justify-self: start;
+    margin-left:20px;
+    cursor: pointer;
+    }
+ 
+    .nav-menu{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        text-align: center;
+        list-style:none;
+       margin-left: 0%;
+     
+       
+    }
+    .nav-links{
+        color:var(--white);
+        text-decoration: none;
+    }
+    .nav-links:hover{
+        color:#dc3545;
+    transition: all 0.2s ease-out;
+    }
+
+    .mobile-menu-icon{
+        cursor: pointer;
+        position: absolute;
+         top: 15px;
+        right: 30px;
+      display: none;
+    }
+
+    .mobile-menu-icon >span{
+        margin-bottom: 4px;
+        display: block;
+        background-color: #fff;
+        width: 20px;
+        height: 5px;
+    }
+
+    .dropdown{
+        outline: none;
+        border: none;
+        background-color:#323031 ;
+        color: white;
+        margin-right: 5px;
+    }
+    .signup{
+        margin-left: auto;
+
+        display: flex;
+        color: white;
+        align-items: center;
+    }
+    .login{
+        padding: 0 5px;
+        margin-right: 5px;
+        border-right: 1px solid;
+    }
+    .signup >span:hover{
+        color:#dc3545;
+        cursor: pointer;
+    }
+    .signup__icon{
+        color:#dc3545 !important;
+        font-size: 35px !important;
+    }
+
+   @media screen and (max-width:992px){
+       .nav-menu{
+           display: none;
+       }
+       .signup{
+           display: none;
+       }
+   }
+
+   @media screen and (max-width:327px){
+        .logo__image{
+            width: 200px;
+            object-fit: contain;
+        }
+   }
